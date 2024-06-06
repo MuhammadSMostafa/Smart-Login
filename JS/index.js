@@ -107,7 +107,7 @@ function login() {
     for (i = 0; i < users.length; i++) {
       if (users[i].email.toLowerCase() == emailInput.value.toLowerCase()) {
         loginEmailExist = true;
-        if (users[0].password == passwordInput.value) {
+        if (users[i].password == passwordInput.value) {
           localStorage.setItem("user", users[i].name);
           navigateToHome();
         } else {
