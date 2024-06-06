@@ -1,0 +1,87 @@
+body {
+  background-color: #24353f;
+}
+.login-container {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #17a2b8;
+  line-height: 48px;
+  text-align: center;
+}
+.login-container form input {
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #24353f;
+  color: white;
+}
+.login-container form input:focus {
+  outline: none;
+  border: 1px solid #17a2b8;
+}
+.login-container form input + p, #empty {
+  color: #ff4c4c;
+}
+.login-container form button {
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+  transition: background-color 0.5s, color 0.5s;
+}
+.login-container form button:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+.login-container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 24px;
+}
+.login-container p span {
+  cursor: pointer;
+}
+.login-container p span:hover {
+  text-decoration: underline;
+}
+nav {
+  height: 60px;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+nav h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: poin;
+}
+nav button {
+  color: #ced4da;
+  border: 1px white solid;
+  border-radius: 7px;
+  padding: 7px 10px;
+  background-color: transparent;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+nav button:hover {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+}
+.home {
+  height: calc(100vh - 60px);
+}
+.home .welcome-user {
+  color: #17a2b8;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+}
