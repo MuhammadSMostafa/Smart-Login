@@ -43,15 +43,15 @@ if (
 }
 
 function navigateToHome() {
-  window.location.pathname = "/Smart-Login/index.html";
+  window.location.href = "index.html";
 }
 
 function navigateToLogin() {
-  window.location.pathname = "/Smart-Login/login.html";
+  window.location.href = "login.html";
 }
 
 function navigateToRegister() {
-  window.location.pathname = "/Smart-Login/register.html";
+  window.location.href = "register.html";
 }
 
 function register() {
@@ -105,7 +105,7 @@ function login() {
     }, 3000);
   } else {
     for (i = 0; i < users.length; i++) {
-      if (users[0].email.toLowerCase() == emailInput.value.toLowerCase()) {
+      if (users[i].email.toLowerCase() == emailInput.value.toLowerCase()) {
         loginEmailExist = true;
         if (users[0].password == passwordInput.value) {
           localStorage.setItem("user", users[i].name);
