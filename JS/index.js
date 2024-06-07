@@ -7,7 +7,6 @@ var welcomeUser = document.getElementById("welcomeUser");
 var emptyInputs = document.getElementById("empty");
 var users = [];
 var user = null;
-var loginEmailExist = false;
 
 if (localStorage.getItem("user")) {
   user = localStorage.getItem("user");
@@ -98,6 +97,7 @@ function emailExist(email) {
 }
 
 function login() {
+var loginEmailExist = false;
   if (emailInput.value.length < 1 || passwordInput.value.length < 1) {
     emptyInputs.classList.remove("d-none");
     setTimeout(function () {
